@@ -1,0 +1,1361 @@
+/*global*/
+body{
+    font-family: 'Rubik', 'Playwrite GB S', cursive;
+    padding: 0;
+    margin: 0;
+    background-image: url(./image/Header.png);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+*{
+    box-sizing: border-box;
+}
+.overTake{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    z-index: 5000;
+}
+.blackOverlay{
+    background-color: rgba(0,0,0,0.4);
+}
+.hidden{
+    display: none;
+}
+.appear{
+    display: block;
+}
+.navbar{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 120px;
+    position: fixed;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1000;
+}
+.navbar>div:nth-child(2){
+    font-weight: 700;
+    font-size: 10px;
+    transform: translateX(-20%);
+    color: white;
+}
+.navigationButton{
+    display: flex;
+    margin-left: auto;
+    margin-right: 100px;
+}
+.navigationButton div{
+    font-weight: 700;
+    font-size: 20px;
+    padding: 0 20px
+}
+.navbar img{
+    z-index: 1000;
+    width: 100px;
+    padding-left: 30px;
+}
+.navbar .navButton{
+    cursor:pointer;
+}
+.navbar .navButton a{
+    text-decoration: none;
+    color: white;
+}
+.navbar .navButton a:hover{
+    color:#bb8525;
+}
+.navbar a:is(:link, :active, :visited).active{
+    color: #bb8525;
+}
+.banner{
+    margin-bottom: 50px;
+}
+.banner .intro{
+    display: flex;
+}
+.banner .intro img{
+    padding-top: 90px;
+    height: 700px;
+    border: none;
+    border-radius: 30%;
+    margin-right: 50px;
+}
+.banner .intro-words{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-right: 30px;
+}
+.banner .intro-words h1{
+    margin: 0px;
+    font-size: 50px;
+    line-height: 55px;
+    color: #bb8525;
+    margin-left: 50px;
+}
+.banner .intro-words p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color: white;
+    margin: 30px 0px 0px 50px;
+}
+
+/* Announcement */
+.modal{
+    background-color: white;
+    padding: 2rem;
+    width: 40rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    color: black;
+    font-size: larger;
+}
+
+/* Home */
+/* Sub-Intro */
+.sub-intro{
+    background-color: rgba(0,0,0,0.6);
+    margin: 0 70px;
+    border-radius: 25%;
+    height: fit-content;
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.sub-intro iframe{
+    width: auto;
+    border-radius: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 30px;
+    padding: 50px;
+}
+.sub-intro-words{
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sub-intro-words h1{
+    margin: 0px;
+    font-size: 50px;
+    line-height: 55px;
+    text-align: justify;
+    color: #d2a63c;
+}
+.sub-intro-words p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: justify;
+}
+
+/* Owl Carousel */
+.feedback {
+    background-image: url(./image/Green\ Blue\ Modern\ Future\ Technology\ Presentation\ \(1\).png);
+    background-size: cover;
+    margin-bottom: 50px;
+    border-top-left-radius: 35%;
+    border-top-right-radius: 35%;
+}
+.feedback .blackOverlay{
+    border-radius: 35% 35% 0 0;
+}
+.feedback .overlay{
+    padding: 70px 0;
+}
+.feedback h2 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #d2a63c;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.feedback .feedback_content {
+    width: 90%;
+    margin: 0 auto;
+    border: 10px solid black;
+    background-color: #0c577630;
+    text-align: center;
+    padding: 32px;
+    border-radius: 35%;
+    
+}
+.feedback_content img {
+    border-radius: 35%;
+    height: 20rem;
+    padding: 30px 30px 0px 30px;
+    filter: blur(5px);
+}
+.feedback_content .fb_name {
+    line-height: 30px;
+    letter-spacing: 1.3px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #bb8525;
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.feedback_content .owl-theme .owl-dots .owl-dot span {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.feedback_content .owl-theme .owl-dots .owl-dot.active span {
+    background-color: black;
+}
+
+
+/* About Me */
+.welcome{
+    position: relative;
+    background-image: url(./image/final.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    padding-top: 120px;
+}
+.welcomeWords{
+    position: absolute;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    align-items: center;
+    padding: 50px;
+    height: unset;
+}
+.welcomeWords h1{
+    color: #FFF8B8;
+    font-size: 50px;
+    font-weight: 1000;
+    text-shadow: 0.5px 5px #d2a63c;
+    text-align: left;
+}
+.welcomeWords p{
+    color: white;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 2px 2px 8px black;
+}
+
+/* greetings */
+.greetings{
+    margin-bottom: 50px;
+}
+.greetings .blackOverlay{
+    border-radius: 30px;
+}
+.heading-title{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.heading-title h3 {
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+    text-align: center; 
+    font-size: 60px;
+    font-weight: 600;
+}
+.heading-title h3::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 200px;
+    height: 5px;
+    transform: translateX(-50%);
+    background-color: #bb8525; 
+}
+.sub-heading-title {
+    text-align: center;
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    color: white;
+    line-height: 25px; 
+    font-size: 20px;
+}
+.greetingsCont{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 55vh 55vh 120px;
+    gap: 20px;
+}
+.g1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.g2{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+.g3{
+    grid-column: 1 / span 3;
+    grid-row: 3 / 4;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 650;
+}
+.g3 b{
+    color: #bb8525;
+}
+.greetingsWords{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playwrite GB S';
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0.1px 0.1px 1px black;
+}
+.greetingsIMG{
+    border-radius: 20px;
+}
+.final{
+    background-image: url(./image/final.jpg);
+    background-size: cover;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.gtp{
+    background-image: url(./image/gtp.png);
+    background-size: cover;
+    grid-column: 2/3;
+    grid-row: 1 / span 2;
+}
+.code{
+    background-image: url(./image/z5969510961094_a562909d43199914ecd598f2edbeeaeb.jpg);
+    background-size: cover;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+
+/* Academics */
+/* .academics{
+    display: none;
+} */
+.academics .welcome{
+    background-image: url(./image/IMG_0029.JPG);
+    height: 100vh;
+    background-position: center;
+    z-index: 90;
+    margin-bottom: 50px;
+}
+.academics .welcomeWords{
+    z-index: 2;
+    padding: 0 200px 0 10px;
+}
+.school{
+    background-color: #00000070;
+    display: flex;
+    padding: 0px 10px 0px 10px;
+    justify-content: center;
+}
+.school img{
+    width: 100px;
+    border-radius: 60%;
+    margin: 30px
+}
+.ltt{
+    background-image: url(./image/Thi\ HS\ gioi\ cap\ Quan\ 2016-2017\ 1.jpg);
+    background-size: cover;
+    margin-right: 10px;
+}
+.lhp{
+    background-image: url(./image/DSC_2403.jpg);
+    background-size: cover;
+    margin-left: 10px;
+}
+.ltt, .lhp{
+    width: 45%;
+    border-radius: 50px;
+    padding: 60px 20px 30px;
+    margin-bottom: 50px;
+}
+.schoolIntro{
+    display: flex;
+    align-items: center;
+}
+.ltt p, .lhp p{
+    margin: 0 30px 0 30px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.schoolRemarks{
+    margin: 0px 0px 50px 0px;
+    display: flex;
+    justify-content: center;
+}
+.accordian {
+  border: 1px solid grey;
+  width: 90%;
+  text-align: center;
+  border-radius: 20px;
+}
+input {
+  display: none;
+}
+label {
+  font-size: 30px;
+  font-weight: 600;
+  background-color: #bb8525;
+  display: block;
+  cursor: pointer;
+  padding: 10px 10px 10px 30px;
+  position: relative;
+  user-select: none;
+  border-radius: 20px;
+}
+label:before {
+  content: " ";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+  height:0;
+  font-size: 0;
+  position: absolute;
+  top: 18px;
+  left: 10px;
+  transition: transform 0.5s;
+  transform-origin: 3px center;
+  margin-left: 15px;
+}
+.accordian>div {
+  font-size: 26px;  
+  height:0;
+  overflow:hidden;
+  opacity:0;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 50% 50%;
+}
+.MS{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.HS{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.ST{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.khungCont{
+    padding: 10px;
+}
+.khungCont h1{
+    color: #FFF8B8;
+    text-shadow: 0.5px 5px #d2a63c;
+}
+input:checked ~ label:before {
+  transform: rotate(90deg)
+}
+input:checked ~ div {
+  padding: 10px;
+  opacity: 1;
+  height: auto;
+}
+
+.statsAca{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4,393px);
+    margin: 0 auto 50px;
+    gap: 10px;
+}
+.grid-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 32px;
+}
+.grid-content p:first-child{
+    font-family: 'Playwrite GB S';
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+}
+.grid-content p:last-child{
+    font-family: 'Playwrite GB S';
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 500;
+    color: white;
+}
+.tradition{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #A16B56;
+    border-top-left-radius: 60px;
+}
+.academics .tradition{
+    background-image: url(./image/stemco.jpg);
+    background-size: cover;
+}
+.img1{
+    background-size: cover;
+    background-image: url(./image/l10.jpg);
+    grid-column: 2/4;
+    grid-row: 1/2;
+    background-position: left;
+}
+.creativity{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-color: #E0A370;
+    border-top-right-radius: 60px;
+}
+.wwbbfy{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background-image: url(./image/IMG_0047.JPG);
+    background-size: cover;
+}
+.img2{
+    background-size: cover;
+    background-image: url(./image/stemco.jpg);
+    grid-column: 3/4;
+    grid-row:2/3;
+}
+.academics .img2{
+    background-image: url(./image/Thi\ HS\ gioi\ cap\ Quan\ 2016-2017\ 1.jpg);
+    grid-column: 3/5;
+}
+.academics .extraIMG1{
+    background-image: url(./image/IELTS1.jpg);
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-size: cover;
+}
+.quality{
+    grid-column: 4/5;
+    grid-row: 2/3;
+    background-color: #F6D13A;
+}
+.img3{
+    background-size: cover;
+    background-image: url(./image/L9.jpg);
+    grid-column: 3/5;
+    grid-row: 3/4;
+    background-position: center;
+}
+.academics .img3{
+    grid-column: 4/5;
+}
+.tasty{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    background-color: #A16B56;
+    border-bottom-left-radius: 60px;
+}
+.academics .tasty{
+    background-image: url(./image/timo.jpg);
+    background-size: cover;
+}
+.img4{
+    background-size: cover;
+    background-image: url(./image/IELTS.jpg);
+    grid-column: 2/4;
+    grid-row: 4/5;
+    background-position: right;
+}
+.supp1{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-color: #E0A370;
+}
+.img5{
+    background-size: cover;
+    background-image: url(./image/SAT.jpg);
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.academics .img5{
+    grid-column: 2/4;
+    background-position-y: -25px;
+}
+.supp2{
+    grid-column: 4/5;
+    grid-row: 4/5;
+    background-color: #F6D13A;
+    border-bottom-right-radius: 60px;
+}
+.academics .supp2{
+    grid-row: 3/5;
+    background-image: url(./image/vanNghe.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* EA */
+/* .extraAct{
+    display: none;
+} */
+.extraAct .welcome{
+    background-image: url(./image/454208271_503913142029246_8222843696705957802_n.jpg);
+    background-position: center;
+    z-index: 90;
+    margin-bottom: 50px;
+    border-radius: 0 0 100% 100%;
+}
+.extraAct .welcomeWords h1{
+    color: #bb8525;
+    font-size: 100px;
+    font-weight: 1000;
+    text-shadow: 0.5px 5px 6px black;
+    text-align: center;
+}
+.extraAct .welcomeWords{
+    width: 100%;
+    padding: 0;
+}
+/* Galaxy Star Animation */
+@keyframes twinkling {
+    from { background-position: 0 0; }
+    to { background-position: -10000px 5000px; }
+}
+.section {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+/* Nebula-like Background for Cards */
+.achievement-card {
+    background: linear-gradient(135deg, #0C0C0C70, #00094B70);
+    color: white;
+    padding: 30px;
+    border-radius: 35px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease;
+    z-index: 2;
+    width: 80vw;
+    display: flex;
+    margin: 0 auto 30px;
+}
+.cardWords{
+    width: 35%;
+}
+.achievement-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 150%;
+    height: 200%;
+    background: linear-gradient(transparent, #fff1, #fff2, #fff3, transparent);
+    z-index: 0;
+    transform: rotate(90deg);
+}
+.achievement-card:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 30px #00329780;
+}
+
+.achievement-card h3 {
+    font-size: 2rem;
+    font-weight: 1000;
+    text-transform: uppercase;
+    color: #bb8525;
+    z-index: 1;
+    position: relative;
+    margin: 15px 0px 10px;
+}
+.achievement-card h2 {
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #FFF8B8;
+    z-index: 1;
+    position: relative;
+    line-height: normal;
+    margin: 0 0 28px 0;
+}
+.achievement-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #f8f8ff;
+    z-index: 1;
+    position: relative;
+    text-align: left;
+    font-weight: 500;
+    margin: 0;
+    line-height: 25px;
+}
+.achievement-card ul{
+    margin: 0;
+}
+.achievement-card p:nth-child(3), p:nth-child(6), p:nth-child(9){
+    text-align: center;
+    color: #FFE338;
+}
+.cardIMG{
+    width: 65%;
+    display: flex;
+    align-items: center;
+}
+.cardIMG .statsAca{
+    grid-template-rows: repeat(4,20vh);
+    margin: 0 auto 0px;
+}
+/* card1 */
+.card1 .img1{
+    background-image: url(./image/HiTechHelloFuture/5.jpg);
+    background-size: cover;
+}
+.card1 .img2{
+    background-image: url(./image/HiTechHelloFuture/3.jpg);
+}
+.card1 .img5{
+    grid-row: 3/5;
+    background-image: url(./image/HiTechHelloFuture/9.jpg);
+    border-bottom-left-radius: 60px;
+}
+.card1 .img4, .card1 .supp2{
+    grid-row: 3/5;
+}
+.card1 .img4{
+    grid-column: 3/4;
+    background-image: url(./image/HiTechHelloFuture/8.jpg);
+    background-size: cover;
+    background-position: left;
+}
+.card1 .img6{
+    grid-row: 4/5;
+    grid-column: 2/3;
+    background-image: url(./image/HiTechHelloFuture/11.jpg);
+    background-size: cover;
+}
+/* card2 */
+.card2 .tradition{
+    background-image: url(./image/LHPPress/GAME\ HOST.JPG);
+    background-size: cover;
+}
+.card2 .img1{
+    background-image: url(./image/LHPPress/HOST\ OF\ FIRST\ MEETING\ EVENT\ \(2\).jpg);
+    background-size: cover;
+    background-position: top;
+}
+.card2 .creativity{
+    background-image: url(./image/LHPPress/IMG_1228.JPG);
+    background-size: cover;
+    background-position: top;
+}
+.card2 .wwbbfy{
+    background-image: url(./image/LHPPress/HOST\ OF\ WORKSHOP.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card2 .img2{
+    background-image: url(./image/LHPPress/20240111-IMG_6624.jpg);
+}
+.card2 .quality{
+    background-image: url(./image/LHPPress/431796807_785625829741389_984264668696567418_n.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+.card2 .img3{
+    background-image: url(./image/LHPPress/Screenshot\ 2024-11-10\ 123316.jpg);
+    background-position: top;
+}
+.card2 .supp1{
+    background-image: url(./image/LHPPress/modelDirector.jpg);
+    background-size: cover;
+}
+.card2 .img4{
+    background-image: url(./image/LHPPress/HEAD\ OF\ PR\ INTRODUCTION.jpg);
+    background-position: top;
+}
+.card2 .img5{
+    grid-row: 3/5;
+    background-image: url(./image/LHPPress/HOST\ OF\ FIRST\ MEETING\ EVENT.jpg);
+    border-bottom-left-radius: 60px;
+}
+.card2 .supp2{
+    background-image: url(./image/LHPPress/DSC00708.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+/* card3 */
+.card3 .statsAca{
+    grid-template-rows: repeat(5,20vh);
+}
+.card3 .tradition{
+    background-image: url(./image/LPOMUN/03_NHAC.jpg);
+    background-size: cover;
+}
+.card3 .img1{
+    background-image: url(./image/LPOMUN/tapTheFM.JPG);
+    background-position-y: -50px;
+}
+.card3 .creativity{
+    background-image: url(./image/LPOMUN/hiChuNhat.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.card3 .wwbbfy{
+    background-image: url(./image/LPOMUN/tapThe1.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.card3 .img2{
+    background-image: url(./image/LPOMUN/COUNTDOWN\ 1\ DAY.png);
+}
+.card3 .img5{
+    grid-column: 1/2;
+    grid-row: 3/5;
+    background-image: url(./image/LPOMUN/checkInDoc.JPG);
+    background-size: cover;
+}
+.card3 .supp1{
+    background-image: url(./image/LPOMUN/MUN-\ DU-01.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+.card3 .quality{
+    background-image: url(./image/LPOMUN/SSDocsChuNhat.jpg);
+    background-size: cover;
+    background-position: left;
+}
+.card3 .img3{
+    background-image: url(./image/LPOMUN/tapThe2.JPG);
+}
+.card3 .img4{
+    grid-row: 4/5;
+    background-image: url(./image/LPOMUN/ThongKeCN.jpg);
+}
+.card3 .img6{
+    grid-row: 4/5;
+    grid-column: 4/5;
+    background-image: url(./image/LPOMUN/MODON4.png);
+    background-size: cover;
+}
+.card3 .tasty{
+    grid-row: 5/6;
+    grid-column: 1/3;
+    background-image: url(./image/LPOMUN/ThanhTichCN.jpg);
+    background-size: cover;
+}
+.card3 .supp2{
+    grid-row: 5/6;
+    grid-column: 3/5;
+    background-image: url(./image/LPOMUN/quantroFMChuNhat.JPG);
+    background-size: cover;
+}
+/* card4 */
+.card4 .statsAca{
+    grid-template-rows: repeat(6,20vh);
+}
+.card4 .tradition{
+    background-image: url(./image/MUNMember/ORGANIZING\ TEAM.JPG);
+    background-size: cover;
+    background-position: top;
+}
+.card4 .img1{
+    background-image: url(./image/MUNMember/wsMaSoiTT1.jpg);
+    background-position: center;
+}
+.card4 .creativity{
+    background-image: url(./image/MUNMember/hinhBua.jpg);
+    background-size: cover;
+    background-position: right;
+}
+.card4 .wwbbfy{
+    background-image: url(./image/MUNChair/ttheMainConf.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+.card4 .img2{
+    background-image: url(./image/MUNMember/cardWS2.jpg);
+}
+.card4 .quality{
+    background-image: url(./image/MUNMember/merchWS2.jpg);
+    background-size: cover;
+}
+.card4 .img5{
+    grid-column: 1/3;
+    grid-row: 3/5;
+    background-image: url(./image/MUNMember/HOST\ OF\ WORKSHOP.JPG);
+    background-position: right;
+}
+.card4 .img4{
+    grid-column: 3/5;
+    grid-row: 3/5;
+    background-image: url(./image/MUNMember/HOST\ OF\ WORKSHOP\(1\).JPG);
+}
+.card4 .tasty{
+    grid-row: 5/7;
+    background-image: url(./image/MUNChair/ChairDoc.JPG);
+    background-size: cover;
+    background-position-x: -10px;
+}
+.card4 .supp2{
+    grid-row: 5/7;
+    grid-column: 2/5;
+    background-image: url(./image/MUNMember/wsMaSoiTT.jpg);
+    background-size: cover;
+}
+/* card5 */
+.card5 .tradition{
+    background-image: url(./image/HeartfeltCalligraphyProject/CALLIGRAPHYPRODUCTS/relens3.jpg);
+    background-size: cover;
+    background-position: top;
+}
+.card5 .img1{
+    background-image: url(./image/HeartfeltCalligraphyProject/CALLIGRAPHYPRODUCTS/1.jpg);
+    background-size: cover;
+    background-position-x: -10px;
+    grid-row: 1/3;
+}
+.card5 .img5{
+    grid-row: 2/4;
+    background-image: url(./image/HeartfeltCalligraphyProject/IMG_6349.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card5 .creativity{
+    background-image: url(./image/HeartfeltCalligraphyProject/IMG_6287.jpg);
+    background-size: cover;
+}
+.card5 .quality{
+    grid-row: 2/4;
+    background-image: url(./image/HeartfeltCalligraphyProject/IMG_6302.jpg);
+    background-position: right;
+    background-size: cover;
+}
+.card5 .img3{
+    grid-column: 2/3;
+    grid-row: 3/5;
+    background-image: url(./image/HeartfeltCalligraphyProject/CALLIGRAPHYPRODUCTS/relens2.jpg);
+}
+.card5 .img4{
+    grid-column: 3/4;
+    grid-row: 3/5;
+    background-image: url(./image/HeartfeltCalligraphyProject/CALLIGRAPHYPRODUCTS/relens1.jpg);
+}
+.card5 .tasty{
+    background-image: url(./image/HeartfeltCalligraphyProject/IMG_6289.jpg);
+    background-size: cover;
+}
+.card5 .supp2{
+    background-image: url(./image/HeartfeltCalligraphyProject/CALLIGRAPHYPRODUCTS/Screenshot\ 2024-11-23\ 120940.jpg);
+    background-size: cover;
+}
+/* card6 */
+.card6 .statsAca{
+    grid-template-rows: repeat(7,20vh);
+}
+.card6 .tradition{
+    background-image: url(./image/MUNDelegate/IMG_7434.JPG);
+    background-size: cover;
+}
+.card6 .img1{
+    background-image: url(./image/MUNDelegate/442494767_460641026356458_7582840383956058131_n.jpg);
+}
+.card6 .creativity{
+    background-image: url(./image/MUNDelegate/IMG_7440.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.card6 .wwbbfy{
+    background-image: url(./image/MUNDelegate/442487644_460641673023060_8236019755427998898_n.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card6 .img2{
+    background-image: url(./image/MUNDelegate/IMG_8084.JPG);
+}
+.card6 .quality{
+    background-image: url(./image/MUNDelegate/IMG_7438.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.card6 .img5{
+    grid-row: 3/5;
+    background-image: url(./image/MUNDelegate/IMG_8083.JPG);
+    background-position: center;
+}
+.card6 .supp1{
+    background-image: url(./image/MUNMember/quayCheckIn.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card6 .img3{
+    grid-row: 3/5;
+    background-image: url(./image/MUNChair/traoGiaiNgang.jpg);
+}
+.card6 .imgEx1{
+    grid-row: 5/6;
+    grid-column: 1/2;
+    background-image: url(./image/MUNDelegate/IMG_7441.JPG);
+    background-size: cover;
+}
+.card6 .img4{
+    grid-column: 2/3;
+    grid-row: 4/6;
+    background-image: url(./image/MUNDelegate/IMG_7436.JPG);
+    background-position: center;
+}
+.card6 .imgEx2{
+    grid-row: 5/6;
+    grid-column: 3/5;
+    background-image: url(./image/MUNDelegate/IMG_7435.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.card6 .imgEx3{
+    grid-row: 6/7;
+    grid-column: 1/3;
+    background-image: url(./image/MUNChair/ChairD2Ngang.JPG);
+    background-size: cover;
+}
+.card6 .imgEx4{
+    grid-row: 6/7;
+    grid-column: 3/4;
+    background-image: url(./image/MUNChair/CCNgang.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card6 .tasty{
+    grid-row: 7/8;
+    background-image: url(./image/MUNDelegate/IMG_8087.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.card6 .imgEx5{
+    grid-row: 7/8;
+    grid-column: 2/4;
+    background-image: url(./image/MUNDelegate/IMG_8088.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.card6 .supp2{
+    grid-row: 6/8;
+    background-image: url(./image/MUNChair/TraGiangDoc.JPG);
+    background-size: cover;
+}
+
+/* card7 */
+.card7 .cardWords{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card7 .cardWords h3{
+    margin-top: 0;
+}
+.card7 .statsAca{
+    grid-template-rows: repeat(3,20vh);
+}
+.card7 .tradition{
+    background-image: url(./image/LPOMUN/COUNTDOWN\ 1\ DAY.png);
+    background-size: cover;
+    background-position-y: -10px;
+}
+.card7 .img1{
+    background-image: url(./image/LPOMUN/MUN-\ DU-01.jpg);
+    background-position: center;
+    grid-row: 1/3;
+}
+.card7 .extraIMG1{
+    background-image: url(./image/Modeling/IMG_3650.JPG);
+    background-size: cover;
+    background-position: center;
+    grid-row: 2/4;
+    grid-column: 1/2;
+    border-bottom-left-radius: 60px;
+}
+.card7 .creativity{
+    background-image: url(./image/LPOMUN/03_NHAC.jpg);
+    background-size: cover;
+    background-position-y: -10px;
+}
+.card7 .quality{
+    background-image: url(./image/Modeling/Doan\ truong.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-row: 2/4;
+    border-bottom-right-radius: 60px;
+}
+.card7 .img3{
+    grid-column: 2/4;
+    background-image: url(./image/Modeling/final.jpg);
+    background-size: cover;
+    background-position-y: top;
+}
+.subintro4{
+    margin-bottom: 100px;
+}
+.biggestProject{
+    margin-bottom: 100px;
+}
+.biggestProject .heading-title{
+    margin-top: 80px;
+}
+.finalProject{
+    width: 85%;
+    margin: auto;
+}
+
+
+/* Intern */
+.intern .welcome{
+    background-image: url(./image/Green\ Blue\ Modern\ Future\ Technology\ Presentation\ \(1\).png);
+    margin: 0 auto 0;
+    height: 100vh;
+    border-radius: 0 0 50px 50px;
+}
+.intern .welcomeWords h1{
+    color: white;
+    font-size: 100px;
+    font-weight: 1000;
+    text-shadow: 5px 5px 16px black;
+    text-align: center;
+}
+.intern .welcomeWords{
+    width: 100%;
+}
+.circle{
+    position: relative;
+    border-radius: 100%;
+    margin: 0 auto 0;
+    height: 150px;
+    width: 150px;
+    background-color: rgba(0,0,0,0.9);
+    box-shadow: 10px 10px 10px #002F63;
+    transform: scale(300%);
+    padding: 5px;
+}
+.circle h1{
+    font-size: 15px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.sscn-shtp{
+    margin: 0 auto 50px;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+.sscn-shtp a{
+    font-size: 30px;
+    color: #2B6ABC;
+}
+.sscn-shtp p{
+    font-size: 20px;
+    color: white;
+    margin: 0;
+    line-height: 2rem;
+}
+
+.sscn-shtp h1{
+    font-size: 35px;
+    font-weight: 600;
+    color: #2B6ABC;
+}
+
+.sscn{
+    border-radius: 30px;
+    grid-column: 1/2;
+    background: linear-gradient(transparent, #0C0C0C80, #00094B80, transparent);
+}
+
+.sscn-content{
+    padding: 25px;
+}
+.sscn-content h1{
+    width: 70%;
+    margin-right: 30px;
+}
+.shtp{
+    border-radius: 30px;
+    grid-column: 2/3;
+    background: linear-gradient(transparent, #0C0C0C80, #00094B80, transparent);
+}
+.shtp-content{
+    padding: 25px;
+}
+.shtp-content h1{
+    width: 70%;
+    text-align: right;
+    margin-left: auto;
+}
+.shtp p, .shtp b{
+    text-align: right;
+}
+.shtp a{
+    margin: 0 0 0 415px;
+}
+
+/* internIMG */
+.internIMG .statsAca{
+    gap: 20px;
+    grid-template-rows: repeat(5, 350px);
+}
+.internIMG .tradition{
+    background-image: url(./image/SHTPInternshipProgram/2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.internIMG .img1{
+    background-image: url(./image/SHTPInternshipProgram/4.JPG);
+}
+.internIMG .creativity{
+    background-image: url(./image/SSConnectIMG1.jpg);
+    background-size: cover;
+    background-position-x: -50px;
+}
+.internIMG .wwbbfy{
+    background-image: url(./image/shtpIMG.jpg);
+    background-size: cover;
+}
+.internIMG .img2{
+    grid-row: 2/4;
+    grid-column: 3/5;
+    background-image: url(./image/SSCONNECT.png);
+    background-position: c;
+}
+.internIMG .img5{
+    background-image: url(./image/SSConnectIMG.jpg);
+    background-position: center;
+}
+.internIMG .supp1{
+    background-image: url(./image/SSConnectIMG2.jpg);
+    background-size: cover;
+}
+.internIMG .extraIMG1{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    background-image: url(./image/SHTPInternshipProgram/1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.internIMG .img4{
+    background-image: url(./image/SHTPInternshipProgram/6.JPG);
+}
+.internIMG .extraIMG2{
+    background-image: url(./image/SHTPInternshipProgram/7.JPG);
+    grid-column: 4/5;
+    grid-row: 4/5;
+    background-size: cover;
+    background-position-y: top;
+}
+.internIMG .tasty{
+    grid-row: 5/6;
+    grid-column: 1/3;
+    background-image: url(./image/SHTPInternshipProgram/5.JPG);
+    background-size: cover;
+}
+.internIMG .supp2{
+    grid-row: 5/6;
+    grid-column: 3/5;
+    background-image: url(./image/SSConnectIMG3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* footer */
+.footer{
+    background-color: #0008;
+    /* background-image: url(../Personal-Website/image/body.png); */
+    border-radius: 100% 100% 0 0;
+}
+.contactInfo{
+    color: white;
+    text-align: center;
+}
+.contactInfo .above{
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+}
+.contactInfo .above .icon{
+    display: flex;
+    margin-right: 30px;
+    align-items: center;
+}
+.contactInfo i{
+    padding-right: 10px;
+    font-size: 2rem;
+    color: white;
+}
+.footer h2{
+    text-align: center;
+    color: #bb8525;
+    font-size: 30px;
+    margin: 0px;
+    padding-top: 20px;
+    line-height: 70px;
+}
+.footer p{
+    font-size: 15px;
+    margin: 0px;
+}
+.footer .below a{
+    text-decoration: none;
+}
+.footer .below{
+    display: flex;
+    justify-content:center;
+    line-height: 50px;
+}
+.footer .below .icon{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+
+/* Galaxy Star Animations */
+@keyframes galaxy-zoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Not-so-responsive */
