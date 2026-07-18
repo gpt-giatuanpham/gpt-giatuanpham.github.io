@@ -111,15 +111,17 @@ body{
 
 /* Announcement */
 .modal{
+    color: black;
     background-color: white;
     padding: 2rem;
-    width: 40rem;
+    width: 25rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 10000;
-    color: black;
+    border-radius: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
     font-size: larger;
 }
 
